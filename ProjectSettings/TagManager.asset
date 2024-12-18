@@ -6,10 +6,9 @@ TagManager:
   tags:
   - player
   - asteroid
-  - PlanetBlane
   - PlanetLindsey
-  - PlanetAthena
   - healthPack
+  - planet
   layers:
   - Default
   - TransparentFX
