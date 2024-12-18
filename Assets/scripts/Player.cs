@@ -36,16 +36,19 @@ if (health <= 0)
     // asteroid collission script
 
     private void OnTriggerEnter(Collider other){
-        if(other.gameObject.CompareTag("asteroid"))
+        if(other.gameObject.CompareTag("asteroid")){
         health = health - 10;
-        Debug.Log("health = "+ health);
-    
-        //if(other.gameObject.CompareTag("fuelPack"))
-        //health = health + 10;
-        //Debug.Log("health = "+ health);
-        //}
+        Debug.Log("OUCH! = "+ health);
+        }
+   
+        else if(other.gameObject.CompareTag("healthPack")){
+        health = health + 5;
+        Debug.Log("HEALTH PACK GET "+ health);
+        Destroy(other.gameObject);
+        }
     }
 }
+
 
     
 

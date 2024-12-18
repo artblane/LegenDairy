@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
         PlaceRandomly(SpaceCow);
         PlaceRandomly(Ship);
         PlaceRandomly(finishLine);
-        PlaceRandomly(Asteroid)
+        PlaceRandomly(Asteroid);
     }
 
     void Update()

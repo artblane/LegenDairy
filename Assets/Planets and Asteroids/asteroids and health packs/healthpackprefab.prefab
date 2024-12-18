@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 300
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 300
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 300
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: healthpackprefab
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
+      propertyPath: m_TagString
+      value: healthPack
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71,6 +75,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6337271826516457805}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299529932108564731}
   m_SourcePrefab: {fileID: 100100000, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}
 --- !u!1 &7714989069861462326 stripped
 GameObject:
@@ -102,5 +109,27 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!64 &1299529932108564731
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7714989069861462326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: dd946f20a073f2d4cbac7c89b629e54e, type: 3}

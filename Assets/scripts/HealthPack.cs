@@ -23,7 +23,7 @@ public GameObject prefab;
 
     // for loop to instantiate several random orienations of the asteroid
     void Start () { 
-    for(int i = 0; i < 200; ++i)
+    for(int i = 0; i < 20; ++i)
 {
     float xQuat = Random.Range(0.0f,1.0f);
         float yQuat = Random.Range(0.0f,1.0f);
