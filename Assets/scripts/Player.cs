@@ -9,28 +9,21 @@ public class Player : MonoBehaviour
     public int health = 100;
 
     public float playerSpeed = 200f;
-    public float rotationSpeed = 2f;
-
-    public float xAngle, yAngle, zAngle;
+    public float rotationSpeed = 200f;
 
     void Start () {
     Debug.Log("health = " + health);
     }
    
    //movement script
-
-   
     void Update ()
     {
     float horizontalInput = Input.GetAxis("Horizontal");
     float verticalInput = Input.GetAxis("Vertical");   
     
-    transform.Translate(Vector3.left * verticalInput * playerSpeed * Time.deltaTime);  
-    transform.Translate(Vector3.down * horizontalInput * playerSpeed * Time.deltaTime);
-    //transform.Rotate(0, Input.GetAxis("Horizontal")* rotationSpeed * Time.deltaTime, 0);
-    //transform.Rotate(Input.GetAxisxAngle, yAngle, zAngle, Space.World);
-
-    
+    //transform.Translate(Vector3.forward * horizontalInput * playerSpeed * Time.deltaTime);  
+    GetComponent<Rigidbody>().AddForce(-transform.right * verticalInput * playerSpeed);
+    transform.Rotate(0,horizontalInput * rotationSpeed * Time.deltaTime,0);
 
     // check for health game over 
 if (health <= 0)
