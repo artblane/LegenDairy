@@ -1,39 +1,9 @@
 fileFormatVersion: 2
-guid: 90ccd656cfd651846bf7cbe034ded9bb
+guid: 836a016e10aaf8e44bc664c74d5104f6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BOOSTERS
-    second: {fileID: 2100000, guid: b2313b49e7f6a474e8cbc985ac9d0a74, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Chair.001
-    second: {fileID: 2100000, guid: bf9c90aebc0715447a4fd13fdd924288, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Exterior
-    second: {fileID: 2100000, guid: 7702b35b3078fe64a948dcec99e7ebba, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Interior
-    second: {fileID: 2100000, guid: e535b1216201a6b4d846c92e1abe7d8c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 6df2468ca95817f4c9ece1e3621492ab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wheel
-    second: {fileID: 2100000, guid: 9f5a2e2081672114592c2916c98c718c, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

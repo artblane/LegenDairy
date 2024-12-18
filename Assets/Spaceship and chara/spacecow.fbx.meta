@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 90ccd656cfd651846bf7cbe034ded9bb
+guid: a8bfbf45317b6224186a92ad6aacc13a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,33 +7,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BOOSTERS
-    second: {fileID: 2100000, guid: b2313b49e7f6a474e8cbc985ac9d0a74, type: 2}
+      name: Cow
+    second: {fileID: 2100000, guid: 6c0dd69781fa9e446b8e84a9f4865444, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Chair.001
-    second: {fileID: 2100000, guid: bf9c90aebc0715447a4fd13fdd924288, type: 2}
+      name: Horn
+    second: {fileID: 2100000, guid: 8dd2d612ef0a7554f883c0533b582c77, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Exterior
-    second: {fileID: 2100000, guid: 7702b35b3078fe64a948dcec99e7ebba, type: 2}
+      name: Material.002
+    second: {fileID: 2100000, guid: 349dbd1d8fffb104ea0df92b40f47bcb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Interior
-    second: {fileID: 2100000, guid: e535b1216201a6b4d846c92e1abe7d8c, type: 2}
+      name: Snout
+    second: {fileID: 2100000, guid: 77c3077f77db07f43a0bd0405ca48f99, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 6df2468ca95817f4c9ece1e3621492ab, type: 2}
+      name: Suit
+    second: {fileID: 2100000, guid: 7679bececc036cf4ca397cb9ba6c2315, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wheel
-    second: {fileID: 2100000, guid: 9f5a2e2081672114592c2916c98c718c, type: 2}
+      name: Zipper
+    second: {fileID: 2100000, guid: 02624132b8a295844a72cbb9eda4bf3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye.001
+    second: {fileID: 2100000, guid: a5ca15e8c18921240a17fe4530889e25, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cow texture
+    second: {fileID: 2800000, guid: 6153c463c8d794744b544ee8f28c6854, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: eye PAINT
+    second: {fileID: 2800000, guid: 6a36c9ab67a2bf440abe301ea76d595b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: horn 2
+    second: {fileID: 2800000, guid: e0ba62f8b2499734fb5e08fcd3020a59, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
