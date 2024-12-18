@@ -48,11 +48,11 @@ public void SetHealth(float healthChange){
         Destroy(other.gameObject);
         }
         else if(other.gameObject.CompareTag("asteroid")){
-        SetHealth(-20f);
+        SetHealth(-5f);
         Debug.Log("OUCH! health is now= "+ health);
         }
         else if(other.gameObject.CompareTag("planet")){
-        SetHealth(-30f);
+        SetHealth(-15f);
         Debug.Log("BIG OUCH! health is now= "+ health);
         }
 
