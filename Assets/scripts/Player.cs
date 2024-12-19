@@ -10,9 +10,11 @@ public class Player : MonoBehaviour
     public float health, MaxHealth;
     public AudioSource AudioPlayerHealth;
 
-    public AudioSource AudioPlayerCrash;
+    public AudioSource AudioAsteroidCrash;
 
-    public AudioSource AudioPlayerPlanetCrash;
+    public AudioSource AudioMoo;
+
+    public AudioSource AudioCrunchyCrash;
 
     public AudioSource AudioPlayerFinishLine;
     
@@ -53,20 +55,23 @@ public void SetHealth(float healthChange){
     public void OnTriggerEnter(Collider other){
         
         if(other.gameObject.CompareTag("healthPack")){
-        SetHealth(10f);
+        SetHealth(15f);
         Debug.Log("HEALTH PACK GET, health is now "+ health);
         AudioPlayerHealth.Play();
         Destroy(other.gameObject);
         }
         else if(other.gameObject.CompareTag("asteroid")){
-        SetHealth(-5f);
+        SetHealth(-10f);
         Debug.Log("OUCH! health is now= "+ health);
-        AudioPlayerCrash.Play();
+        AudioAsteroidCrash.Play();
+        AudioMoo.Play();
         }
         else if(other.gameObject.CompareTag("planet")){
-        SetHealth(-15f);
+        SetHealth(-20f);
         Debug.Log("BIG OUCH! health is now= "+ health);
-        AudioPlayerPlanetCrash.Play();
+        AudioCrunchyCrash.Play();
+        AudioAsteroidCrash.Play();
+        AudioMoo.Play();
         }
          else if(other.gameObject.CompareTag("finishLine")){
             Debug.Log("you hit the finishline");
