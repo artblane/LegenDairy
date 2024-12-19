@@ -28,12 +28,12 @@ public GameObject prefab;
     float xQuat = Random.Range(0.0f,1.0f);
         float yQuat = Random.Range(0.0f,1.0f);
         float zQuat = Random.Range(0.0f,1.0f);
-        Quaternion newQuaternion = new Quaternion();
-        newQuaternion.Set(xQuat, yQuat, yQuat, zQuat);
+        //Quaternion newQuaternion = new Quaternion();
+        //newQuaternion.Set(xQuat, yQuat, yQuat, zQuat);
         //Return the new Quaternion
         
     
-    PlaceRandomly(Instantiate(prefab, new Vector3(0,10,0), newQuaternion));
+    PlaceRandomly(Instantiate(prefab, new Vector3(0,10,0), Quaternion.identity));
 
     }
     }
