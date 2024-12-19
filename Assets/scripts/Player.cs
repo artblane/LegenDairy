@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -75,6 +76,7 @@ public void SetHealth(float healthChange){
 if (health <= 0)
         {
             Debug.Log("Game Over");
+            SceneManager.LoadScene("Lose"); 
         }
         }
     }
