@@ -69,6 +69,7 @@ public void SetHealth(float healthChange){
         AudioPlayerPlanetCrash.Play();
         }
          else if(other.gameObject.CompareTag("finishLine")){
+            Debug.Log("you hit the finishline");
         AudioPlayerFinishLine.Play();
         }
 
