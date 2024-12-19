@@ -7,6 +7,15 @@ using UnityEngine.Rendering;
 public class Player : MonoBehaviour
 {
     public float health, MaxHealth;
+    public AudioSource AudioPlayerHealth;
+
+    public AudioSource AudioPlayerCrash;
+
+    public AudioSource AudioPlayerPlanetCrash;
+
+    public AudioSource AudioPlayerFinishLine;
+    
+
     public float playerSpeed = 200f;
     public float rotationSpeed = 20f;
     //healthbar UI 
@@ -45,15 +54,21 @@ public void SetHealth(float healthChange){
         if(other.gameObject.CompareTag("healthPack")){
         SetHealth(10f);
         Debug.Log("HEALTH PACK GET, health is now "+ health);
+        AudioPlayerHealth.Play();
         Destroy(other.gameObject);
         }
         else if(other.gameObject.CompareTag("asteroid")){
         SetHealth(-5f);
         Debug.Log("OUCH! health is now= "+ health);
+        AudioPlayerCrash.Play();
         }
         else if(other.gameObject.CompareTag("planet")){
         SetHealth(-15f);
         Debug.Log("BIG OUCH! health is now= "+ health);
+        AudioPlayerPlanetCrash.Play();
+        }
+         else if(other.gameObject.CompareTag("finishLine")){
+        AudioPlayerFinishLine.Play();
         }
 
         // check for health game over 

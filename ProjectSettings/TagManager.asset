@@ -9,6 +9,7 @@ TagManager:
   - PlanetLindsey
   - healthPack
   - planet
+  - finishLine
   layers:
   - Default
   - TransparentFX
