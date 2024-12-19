@@ -397,7 +397,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f42aecdd7b8149e4190fcf7ac52dc7cb, type: 3}
   m_Resource: {fileID: 8300000, guid: f42aecdd7b8149e4190fcf7ac52dc7cb, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2770,7 +2770,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7bdf498d5ad1d634195e390807a346a6, type: 3}
   m_Resource: {fileID: 8300000, guid: 7bdf498d5ad1d634195e390807a346a6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
